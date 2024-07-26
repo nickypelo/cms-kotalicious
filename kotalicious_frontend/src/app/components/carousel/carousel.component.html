@@ -1,0 +1,15 @@
+<swiper-container
+    navigation="true"
+    [slidesPerView]="slidesPerView"
+    [loop]="true"
+    autoplay="true"
+    >
+    
+    <swiper-slide *ngFor="let item of carouselItems">
+        <div class="flex item-end justify-center">
+            <img src={{item.src}} alt={{item.alt}} width="280" class="mx-auto" loading="lazy">
+        </div>
+    </swiper-slide>
+
+</swiper-container>
+  

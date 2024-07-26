@@ -1,0 +1,155 @@
+<header class="min-h-70v bg-front sm:bg-front-big bg-cover bg-center md:bg-right-top">
+    <div class="min-h-70v bg-black bg-opacity-50">
+        <div class=" p-4 pt-20 w-full flex justify-center items-center sm:max-w-[1600px] sm:justify-end">
+            <div class="text-center text-white font-serif font-bold md">
+                <h1 class="text-2xl mb-4 sm:text-4xl md:text-6xl lg:text-8xl">
+                    DELICIOUS <span class="block">AND</span> KASI-FIED
+                </h1>
+                <button class="py-3 px-5 md:py-4 md:px-9 md:text-lg text-sm font-semibold bg-primary rounded-3xl hover:bg-red-600 text-black hover:text-white mb-12">Order Now</button>
+                <p>Get 5% off on Mondays. Code  KOTA55</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- favorites section -->
+    <section class="max-w-primary mx-auto mb-12">
+        <div class="text-center text-secondary mt-12">
+            <div class="w-28 h-28 m-auto rounded-full mb-4">
+                <img src={{decorator}} alt="deco" class="w-28 h-28 rounded-full" loading="lazy"/>
+            </div>
+            <h1 class="text-2xl sm:text-4xl font-semibold mb-4 w-fit mx-auto border-b-2 border-primary font-serif">Customer Favorites</h1>
+        </div>
+        
+        <article class="p-4 max-w-third mx-auto">
+            <div class="sm:grid grid-cols-2 gap-4">
+                <div class="mb-8">
+                    <img src={{favorite1}} alt="favorite_1" class="w-[500px] mx-auto ">
+
+                </div>
+                <div>
+                    <img src={{favorite2}} alt="favorite_2" class="w-[500px] mx-auto">
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- advertisement section -->
+    <section class="bg-primary py-4">
+        <div class="max-w-primary mx-auto">
+            <div>
+                <article class="sm:grid grid-cols-2 max-w-third mx-auto p-6">
+                    <div class=" text-center sm:text-left mb-8">
+                        <div class="text-center pt-8">
+                            <div class="w-28 h-28 m-auto rounded-full mb-4">
+                                <img src={{deco}} alt="deco" class="w-28 h-28 rounded-full" loading="lazy"/>
+                            </div>
+                            <h1 class="text-2xl sm:text-4xl font-semibold mb-4 w-fit mx-auto border-b-2 border-secondary font-serif pb-2">Specials</h1>
+                        </div>
+                        <div class="text-semibold text-lg">
+                            <p class="mb-4">Check our page every<span class="px-2 mx-2 font-bold bg-secondary text-white">Tuesday</span>and 
+                                <span class="px-2 mx-2 font-bold bg-secondary text-white">Thursday</span> to find out what new deals are waiting for you!
+                            </p>
+                            <p class="mb-4"><strong>Don't miss out.</strong> </p>
+                            <p>#forgetthedietandeatakota</p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex justify-center sm:justify-end items-center">
+                        <img src={{discount}} alt="discount_poster" class="w-[330px]">
+                    </div>
+                    
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials section -->
+    <section class="py-4">
+        <div class="max-w-[1084px] mx-auto py-6">
+            <h2 class="text-2xl sm:text-4xl font-semibold mb-4 w-fit mx-auto border-b-2 border-primary font-serif">Testimonials</h2>
+            <p class="mb-12 w-fit mx-auto ">Word from satisfied customers</p>
+            <div class="p-8">
+                <app-carousel></app-carousel>
+            </div>
+        </div>
+    </section>
+
+    <!-- operating times -->
+    <section class="bg-secondary text-white py-4">
+        <div class="max-w-primary mx-auto">
+            <div class="text-center mt-12">
+                <div class="w-32 h-32 m-auto rounded-full mb-4 border-t-2 pt-4 border-white">
+                    <h1 class="text-2xl sm:text-4xl font-semibold w-fit mx-auto font-serif border-b-2 pb-2">Open</h1>
+                </div>
+                <p class="mb-12 font-bold sm:text-xl">These are our operating times</p>
+                <div class="">
+                    <div class="mb-12">
+                        <table class="text-black min-w-80 md:min-w-96 md:text-lg mx-auto text-xs sm:text-base border-2 border-primary">
+                            <thead>
+                                <tr class="bg-primary">
+                                    <th class="px-4 py-2  text-sm font-semibold text-stone-700">Day</th>
+                                    <th class="px-4 py-2  text-sm font-semibold text-stone-700">Open</th>
+                                    <th class="px-4 py-2  text-sm font-semibold text-stone-700">Close</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="px-4 py-2 border-r-2 border-primary">Monday</td>
+                                    <td class="px-4 py-2 border-r-2 border-primary">09:00</td>
+                                    <td class="px-4 py-2">17:00</td>
+                                </tr>
+                                <tr class="bg-primary">
+                                    <td class="px-4 py-2 border-r-2 border-primary">Tuesday</td>
+                                    <td class="px-4 py-2 border-r-2 border-primary">11:00</td>
+                                    <td class="px-4 py-2">18:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 border-r-2 border-primary">Wednesday</td>
+                                    <td class="px-4 py-2 border-r-2 border-primary">09:00</td>
+                                    <td class="px-4 py-2">16:00</td>
+                                </tr>
+                                <tr class="bg-primary">
+                                    <td class="px-4 py-2 border-r-2 border-primary">Thursday</td>
+                                    <td class="px-4 py-2 border-r-2 border-primary">09:00</td>
+                                    <td class="px-4 py-2">17:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 border-r-2 border-primary">Friday</td>
+                                    <td class="px-4 py-2 border-r-2 border-primary">12:00</td>
+                                    <td class="px-4 py-2">18:00</td>
+                                </tr>
+                                <tr class="bg-primary">
+                                    <td class="px-4 py-2 border-r-2 border-primary">Saturday</td>
+                                    <td class="px-4 py-2 border-r-2 border-primary">10:00</td>
+                                    <td class="px-4 py-2">17:00</td>
+                                </tr>
+                            </tbody>
+                        </table>    
+                    </div>
+                    <div class="sm:text-xl mb-8 flex justify-center items-center font-semibold hover:text-black">
+                        <a routerLink="/menu" class="px-4 py-2 bg-primary hover:border-primary hover:border-2 hover:bg-secondary">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- word from owner -->
+     <section>
+        <div class="max-w-primary mx-auto">
+            <div class="sm:grid grid-cols-2 py-4">
+                <div class="grid grid-cols-2 mb-4">
+                    <img src={{owner}} alt="owner" width="300">
+                    <img src={{founder}} alt="owner" width="300">
+                </div>
+                <div class="flex flex-col text-center justify-center pb-8 sm:text-xl">
+                    <q class="mb-6 px-4 italic">Succumb to peer pressure and get you something for those taste buds!</q>
+                    <p>- Chef</p>
+                </div>
+            </div>
+        </div>
+     </section>
+</main>
