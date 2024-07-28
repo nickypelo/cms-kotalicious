@@ -1,6 +1,11 @@
 <div class="hidden md:block bg-black text-white ">
-    <section class="justify-between p-2 flex m-auto max-w-primary">
-        <div><p>LeviMakhiha@business.com</p></div>
+    <section class="justify-between p-2 flex m-auto max-w-primary relative">
+        <div><p>LeviMakhiha&#64;business.com</p></div>
+        <a class="absolute z-10 left-1/2 transform -translate-x-1/2" routerLink="/">
+            <div class="w-48 h-20 bg-primary flex justify-center p-2">
+                <img src={{logo}} alt="logo" class="" width="200">
+            </div>
+        </a>
         <article>Profile</article>
     </section>
 </div>
@@ -10,7 +15,7 @@
             <!-- <li *ngFor="let item of navList">
                 <a routerLink={{item.link}} routerLinkActive="active">{{item.name}}</a>
             </li> -->
-            <div class="flex justify-around w-1/2">
+            <div class="flex w-1/2 gap-12">
                 <li>
                     <a routerLink={{navList[0].link}} routerLinkActive="active">{{navList[0].name}}</a>
                 </li>
@@ -18,7 +23,7 @@
                     <a routerLink={{navList[1].link}} routerLinkActive="active">{{navList[1].name}}</a>
                 </li>
             </div>
-            <div class="flex justify-around w-1/2 ">
+            <div class="flex justify-end w-1/2 gap-12">
                 <li>
                     <a routerLink={{navList[2].link}} routerLinkActive="active">{{navList[2].name}}</a>
                 </li>
@@ -28,8 +33,10 @@
             </div>
         </ul>
     
-        <a class="absolute -top-10 left-1/2 transform -translate-x-1/2" routerLink="/">
-            <div class="w-14 md:w-24 h-24 bg-primary"></div>
+        <a class="absolute z-10 left-1/2 transform -translate-x-1/2 md:hidden" routerLink="/">
+            <div class="w-44 h-20 bg-primary flex justify-center p-2">
+                <img src={{logo}} alt="logo" class="" width="160">
+            </div>
         </a>
         <div class="md:hidden cursor-pointer" (click)="toggleNavSidebar()">
             <span class="w-7 h-1 bg-black block mb-1"></span>

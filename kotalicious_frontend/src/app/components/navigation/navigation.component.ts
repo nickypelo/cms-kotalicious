@@ -27,4 +27,6 @@ export class NavigationComponent {
     (this.showBar === 'block') ? this.showBar = 'none' : this.showBar = 'block'
   }
 
+  logo: string = '../../../assets/logo.jpg';
+
 }
