@@ -1,0 +1,22 @@
+server:
+  port: 8088
+  error:
+    include-message: always
+  servlet:
+    context-path: /api/v1
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/kotalicious
+    username: 'root'
+    password: 'Palesa'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
